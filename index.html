@@ -45,10 +45,17 @@
 
 <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 60; canvasWidth: 200; canvasHeight: 200'>
-        <a-assets>
+        <!--<a-assets>
               <video  preload="auto" id="vid" src="mov_bbb.mp4"  response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls></video>
             
-        </a-assets>
+        </a-assets>-->
+
+        <a-assets>
+                <video preload="auto" id="vid" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
+                    <source  src="mov_bbb.mp4">
+                    
+                </video>
+            </a-assets>
  
        <!-- <a-marker preset="hiro" id="memarker" type="pattern" vidhandler>
               
@@ -56,11 +63,13 @@
         <a-entity camera></a-entity>
         <a-entity geometry="primitive: plane" material="src: #vid"></a-entity>-->
 
-
         <a-marker id="memarker" type="pattern" preset="hiro" vidhandler>
                 <a-plane position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#vid' controls></a-plane>
             </a-marker>
             <a-entity camera></a-entity>
+
+
+   
 
     </a-scene>
     <div class="footer">
