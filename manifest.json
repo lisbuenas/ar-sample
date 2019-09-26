@@ -1,0 +1,9 @@
+{
+  "name": "Teste apresentação",
+  "short_name": "Apresentação",
+  "theme_color": "#2196f3",
+  "background_color": "#33a5ff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+}
