@@ -49,9 +49,10 @@
                 <img src="ANY IMAGE PATH (THUMBNAIL)"> Your browser does not support Or Else Please Click Reset Button.
             </video>
         </a-assets>
-        <a-marker id="memarker" type="pattern" url="https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg" vidhandler>
-            <a-plane position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#vid' controls></a-plane>
-        </a-marker>
+ 
+        <a-marker preset="hiro" id="memarker" type="pattern" vidhandler>
+            <a-box position='0 0.5 0' material='transparent:true;src:#vid' controls></a-box>
+  	</a-marker>
         <a-entity camera></a-entity>
     </a-scene>
     <div class="footer">
