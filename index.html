@@ -45,12 +45,13 @@
     <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 60; canvasWidth: 200; canvasHeight: 200'>
         <a-assets>
             <video preload="auto" id="vid" poster="ANY IMAGE PATH (THUMBNAIL)" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
-                <source  src="https://www.w3schools.com/html/mov_bbb.mp4">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4">
                 <img src="ANY IMAGE PATH (THUMBNAIL)"> Your browser does not support Or Else Please Click Reset Button.
             </video>
         </a-assets>
  
         <a-marker preset="hiro" id="memarker" type="pattern" vidhandler>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay>
             <a-box position='0 0.5 0' material='transparent:true;src:#vid' controls></a-box>
   	</a-marker>
         <a-entity camera></a-entity>
