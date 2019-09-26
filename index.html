@@ -46,14 +46,13 @@
         <a-assets>
               
 
-            <video preload="auto" id="vid" poster="ANY IMAGE PATH (THUMBNAIL)" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4">
-                <img src="ANY IMAGE PATH (THUMBNAIL)"> Your browser does not support Or Else Please Click Reset Button.
-            </video>
+            
+                    <video  preload="auto" id="vid" src="https://www.w3schools.com/html/mov_bbb.mp4"  response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls></video>
+            
         </a-assets>
  
         <a-marker preset="hiro" id="memarker" type="pattern" vidhandler>
-                <video id="vid" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+              
   	</a-marker>
         <a-entity camera></a-entity>
         <a-entity geometry="primitive: plane" material="src: #vid"></a-entity>
