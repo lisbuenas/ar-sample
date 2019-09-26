@@ -1,7 +1,7 @@
 <!doctype HTML>
 <html>
-
 <head>
+    <!-- SAMPLE  https://jsfiddle.net/anil001ry/twfm4ay6/ -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
@@ -55,7 +55,8 @@
             </a-assets>
  
 
-        <a-marker id="memarker" type="pattern" preset="hiro" vidhandler>
+            <a-marker id="memarker" type="pattern" url="sample1.jpg" vidhandler>
+        <!--<a-marker id="memarker" type="pattern" preset="hiro" vidhandler>-->
                 <a-plane position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#vid' controls></a-plane>
             </a-marker>
             <a-entity camera></a-entity>
