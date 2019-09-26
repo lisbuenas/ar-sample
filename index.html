@@ -18,7 +18,9 @@
             },
             tick: function() {
                 if (this.el.object3D.visible == true) {
+                    console.log('visible')
                     if (!this.toggle) {
+                        console.log('Plaing video...');
                         this.toggle = true;
                         this.vid.play();
                     }
@@ -44,10 +46,7 @@
 <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 60; canvasWidth: 200; canvasHeight: 200'>
         <a-assets>
-              
-
-            
-                    <video  preload="auto" id="vid" src="https://www.w3schools.com/html/mov_bbb.mp4"  response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls></video>
+              <video  preload="auto" id="vid" src="mov_bbb.mp4"  response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls></video>
             
         </a-assets>
  
